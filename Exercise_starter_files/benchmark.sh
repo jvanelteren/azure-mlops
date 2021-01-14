@@ -69,5 +69,6 @@
 # Waiting:       92  137  28.3    151     176
 # Total:        114  160  28.0    172     199#
 
+# If the service is authenticated, set the key or token
 
- ab -n 10 -v 4 -p data.json -T 'application/json' -H 'Authorization: Bearer REPLACE_WITH_KEY' http://REPLACE_WITH_API_URL/score
+ ab -n 10 -v 4 -p data.json -T 'application/json' -H 'Authorization: Bearer HZEYt6ai2g8DjRjBe1cliQuVtPt6EFAO' http://b3b6303a-12d0-4ee1-b703-11604fab8086.westeurope.azurecontainer.io/score
