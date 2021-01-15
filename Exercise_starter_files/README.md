@@ -13,7 +13,7 @@ The project can be improved in multiple ways:
 - Making the pipeline more flexible by giving it the option to specify the dataset and target column, this way we create another way to use Azure apart from the SDK and the Portal.
 
 # Link to Youtube screencast
-test
+test2
 
 # Screenshots, hover over for description
 ![Bla](screenshots\01_service_principal_created.PNG)
