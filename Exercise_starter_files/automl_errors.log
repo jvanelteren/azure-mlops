@@ -95,3 +95,104 @@ Traceback:
 ExceptionTarget: Unspecified
 2021-01-12 20:40:19.176 - WARNING - 11024 - azureml.train.automl._azureautomlclient._validate_input:680 - Validation service meet exceptions, continue training now.
 2021-01-12 20:40:54.383 - INFO - 11024 - azureml.automl.runtime.distributed.utilities.horovod_initialized:58 - Horovod not found in current environment. Distribution via Horovod will be disabled.
+2021-01-14 14:29:20.332 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package azureml-train-automl missing from dependencies file.
+2021-01-14 14:29:21.358 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: azureml-train-automl==1.19.0.*
+2021-01-14 14:29:21.359 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package pandas missing from dependencies file.
+2021-01-14 14:29:21.361 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: pandas==0.25.1
+2021-01-14 14:29:21.362 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package psutil missing from dependencies file.
+2021-01-14 14:29:21.363 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: psutil>5.0.0,<6.0.0
+2021-01-14 14:29:21.365 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package scikit-learn missing from dependencies file.
+2021-01-14 14:29:21.382 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: scikit-learn==0.22.1
+2021-01-14 14:29:21.383 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package numpy missing from dependencies file.
+2021-01-14 14:29:21.395 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: numpy~=1.18.0
+2021-01-14 14:29:21.398 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package py-xgboost missing from dependencies file.
+2021-01-14 14:29:21.399 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: py-xgboost<=0.90
+2021-01-14 14:29:21.401 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package inference-schema missing from dependencies file.
+2021-01-14 14:29:21.403 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package fbprophet missing from dependencies file.
+2021-01-14 14:29:21.404 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: fbprophet==0.5
+2021-01-14 14:29:21.405 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package setuptools-git missing from dependencies file.
+2021-01-14 14:29:21.466 - INFO - 5076 - azureml.automl.core.dataset_utilities._save_datasets_to_json:148 - JSON serialization of input of type <class 'NoneType'> is un-supported.
+2021-01-14 14:29:21.467 - INFO - 5076 - azureml.automl.core.dataset_utilities._save_datasets_to_json:148 - JSON serialization of input of type <class 'NoneType'> is un-supported.
+2021-01-14 14:29:21.502 - INFO - 5076 - azureml.train.automl._azureautomlclient._validate_input:663 - Start data validation.
+2021-01-14 14:29:21.522 - CRITICAL - 5076 - azureml.train.automl._azureautomlclient.log_traceback:224 - Type: Unclassified
+Class: ValueError
+Message: experiment_id should not be None.
+Traceback:
+  File "_azureautomlclient.py", line 672, in _validate_input
+    validation_results = self._jasmine_client.post_validate_service(parent_run_dto)
+  File "jasmine_client.py", line 60, in post_validate_service
+    self._client.jasmine.validate_run_input, create_parent_run_dto)
+  File "experiment_client.py", line 261, in _execute_with_experimentid_arguments
+    raise ValueError("experiment_id should not be None.")
+
+ExceptionTarget: Unspecified
+2021-01-14 14:29:21.523 - WARNING - 5076 - azureml.train.automl._azureautomlclient._validate_input:680 - Validation service meet exceptions, continue training now.
+2021-01-14 14:29:57.993 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package pandas missing from dependencies file.
+2021-01-14 14:29:57.994 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: pandas==0.25.1
+2021-01-14 14:29:57.996 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package scikit-learn missing from dependencies file.
+2021-01-14 14:29:57.999 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: scikit-learn==0.22.1
+2021-01-14 14:29:58.015 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package numpy missing from dependencies file.
+2021-01-14 14:29:58.018 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: numpy~=1.18.0
+2021-01-14 14:29:58.031 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package setuptools-git missing from dependencies file.
+2021-01-14 14:29:58.071 - INFO - 5076 - azureml.automl.core.dataset_utilities._save_datasets_to_json:148 - JSON serialization of input of type <class 'NoneType'> is un-supported.
+2021-01-14 14:29:58.097 - INFO - 5076 - azureml.automl.core.dataset_utilities._save_datasets_to_json:148 - JSON serialization of input of type <class 'NoneType'> is un-supported.
+2021-01-14 14:29:58.116 - INFO - 5076 - azureml.train.automl._azureautomlclient._validate_input:663 - Start data validation.
+2021-01-14 14:29:58.120 - CRITICAL - 5076 - azureml.train.automl._azureautomlclient.log_traceback:224 - Type: Unclassified
+Class: ValueError
+Message: experiment_id should not be None.
+Traceback:
+  File "_azureautomlclient.py", line 672, in _validate_input
+    validation_results = self._jasmine_client.post_validate_service(parent_run_dto)
+  File "jasmine_client.py", line 60, in post_validate_service
+    self._client.jasmine.validate_run_input, create_parent_run_dto)
+  File "experiment_client.py", line 261, in _execute_with_experimentid_arguments
+    raise ValueError("experiment_id should not be None.")
+
+ExceptionTarget: Unspecified
+2021-01-14 14:29:58.120 - WARNING - 5076 - azureml.train.automl._azureautomlclient._validate_input:680 - Validation service meet exceptions, continue training now.
+2021-01-14 14:30:07.621 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package pandas missing from dependencies file.
+2021-01-14 14:30:07.621 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: pandas==0.25.1
+2021-01-14 14:30:07.622 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package scikit-learn missing from dependencies file.
+2021-01-14 14:30:07.623 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: scikit-learn==0.22.1
+2021-01-14 14:30:07.624 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package numpy missing from dependencies file.
+2021-01-14 14:30:07.624 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: numpy~=1.18.0
+2021-01-14 14:30:07.626 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package setuptools-git missing from dependencies file.
+2021-01-14 14:30:07.700 - INFO - 5076 - azureml.automl.core.dataset_utilities._save_datasets_to_json:148 - JSON serialization of input of type <class 'NoneType'> is un-supported.
+2021-01-14 14:30:07.703 - INFO - 5076 - azureml.automl.core.dataset_utilities._save_datasets_to_json:148 - JSON serialization of input of type <class 'NoneType'> is un-supported.
+2021-01-14 14:30:07.747 - INFO - 5076 - azureml.train.automl._azureautomlclient._validate_input:663 - Start data validation.
+2021-01-14 14:30:07.755 - CRITICAL - 5076 - azureml.train.automl._azureautomlclient.log_traceback:224 - Type: Unclassified
+Class: ValueError
+Message: experiment_id should not be None.
+Traceback:
+  File "_azureautomlclient.py", line 672, in _validate_input
+    validation_results = self._jasmine_client.post_validate_service(parent_run_dto)
+  File "jasmine_client.py", line 60, in post_validate_service
+    self._client.jasmine.validate_run_input, create_parent_run_dto)
+  File "experiment_client.py", line 261, in _execute_with_experimentid_arguments
+    raise ValueError("experiment_id should not be None.")
+
+ExceptionTarget: Unspecified
+2021-01-14 14:30:07.759 - WARNING - 5076 - azureml.train.automl._azureautomlclient._validate_input:680 - Validation service meet exceptions, continue training now.
+2021-01-14 14:31:07.181 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package pandas missing from dependencies file.
+2021-01-14 14:31:07.182 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: pandas==0.25.1
+2021-01-14 14:31:07.184 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package scikit-learn missing from dependencies file.
+2021-01-14 14:31:07.184 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: scikit-learn==0.22.1
+2021-01-14 14:31:07.185 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package numpy missing from dependencies file.
+2021-01-14 14:31:07.186 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: numpy~=1.18.0
+2021-01-14 14:31:07.214 - INFO - 5076 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package setuptools-git missing from dependencies file.
+2021-01-14 14:31:07.230 - INFO - 5076 - azureml.automl.core.dataset_utilities._save_datasets_to_json:148 - JSON serialization of input of type <class 'NoneType'> is un-supported.
+2021-01-14 14:31:07.236 - INFO - 5076 - azureml.automl.core.dataset_utilities._save_datasets_to_json:148 - JSON serialization of input of type <class 'NoneType'> is un-supported.
+2021-01-14 14:31:07.263 - INFO - 5076 - azureml.train.automl._azureautomlclient._validate_input:663 - Start data validation.
+2021-01-14 14:31:07.296 - CRITICAL - 5076 - azureml.train.automl._azureautomlclient.log_traceback:224 - Type: Unclassified
+Class: ValueError
+Message: experiment_id should not be None.
+Traceback:
+  File "_azureautomlclient.py", line 672, in _validate_input
+    validation_results = self._jasmine_client.post_validate_service(parent_run_dto)
+  File "jasmine_client.py", line 60, in post_validate_service
+    self._client.jasmine.validate_run_input, create_parent_run_dto)
+  File "experiment_client.py", line 261, in _execute_with_experimentid_arguments
+    raise ValueError("experiment_id should not be None.")
+
+ExceptionTarget: Unspecified
+2021-01-14 14:31:07.297 - WARNING - 5076 - azureml.train.automl._azureautomlclient._validate_input:680 - Validation service meet exceptions, continue training now.
